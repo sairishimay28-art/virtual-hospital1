@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+    </header>
+    <main>
+        <section>
+            <form onsubmit="return confirmAppointment()">
+                <table align="center" border="1">
+                    <tr>
+                        <th>Name</th>
+                        <td><input type="text" id="pname"></td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td><input type="number" id="age"></td>
+                    </tr>
+                    <tr>
+                        <th>date</th>
+                        <td><input type="date" id="appiontmentdate"></td>
+                    </tr>
+                    <tr>
+                        <th>time</th>
+                        <td><input type="time"></td>
+                    </tr>
+                </table>
+                <br>
+                <div align="center" >
+                        <button>Confirm</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("doctor").innerText= localStorage.getItem("doctor");
+    </script>
+</body>
+</html>
