@@ -49,3 +49,27 @@ function confirmAppointment(){
   location.href="confirmation.html"
   return false
 }
+//Language selection 
+const languageData={
+  en:{
+    title:"My Virtual Hospital",
+    desc:"Online Health Assistance (Educational)",
+    welcome:"Welcome",
+    p:"This is a Virtual hospital that helps you assess symptom severity and book appointments.",
+    start:"start health check"
+  },
+  te:{
+    title:"నా వర్చువల్ హాస్పిటల్",
+    desc:"ఆన్‌లైన్ ఆరోగ్య సహాయం (విద్య)",
+    welcome:"స్వాగతం",
+    p:"ఇది ఒక వర్చువల్ ఆసుపత్రి, ఇది సలహా తీవ్రత అంచనా వేయడానికి మరియు నియామకాలను బుక్ చేయడానికి సహాయం చేస్తుంది.",
+    start:"ఆరోగ్య తనిఖీని ప్రారంభించండి"
+  }
+}
+function setLanguage(lang){
+  document.getElementById("title").innerHTML=languageData[lang].title;
+  document.getElementById("desc").innerHTML=languageData[lang].desc;
+  document.getElementById("welcome").innerHTML=languageData[lang].welcome;
+  document.getElementById("p").innerHTML=languageData[lang].p;
+  document.getElementById("start").innerHTML=languageData[lang].start;
+}
